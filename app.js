@@ -4,9 +4,7 @@ const moment = require('moment');
 const app = express();
 
 app.get('/', (req, res) => {
-	res.send('Pass a natural or unix date as parameter.');
-	// Make this a little prettier
-	// run it on heroku
+	res.send("Pass either a unix timestamp or a natural language date (example: January 1, 2016) as parameter.");
 });
 
 app.get('/:time', (req, res) => {
